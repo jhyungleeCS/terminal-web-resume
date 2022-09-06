@@ -2,8 +2,14 @@ html{
     background-color: beige;
 }
 
-#first-line{
+#text-element{
     display: inline;
 }
 
+input{
+    padding: 5px;
+    /* the width, see if it is different percent if the window is lower */
+    width: 50%;
+    box-sizing: border-box;
+}
 
