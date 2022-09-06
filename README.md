@@ -6,4 +6,4 @@ This is my first web application project that I wanted to work on to help kickst
 
 A particular way that I wanted to display my resume was using a website to help showcase my projects, blogs, and research through a command-line/TERMINAL like style website.
 
-I got my inspiration off of: https://fkcodes.com/ 
+
