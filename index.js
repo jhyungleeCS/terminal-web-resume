@@ -27,23 +27,38 @@ const resume = [
 
 
 //Function to create before div text
-let textElement = document.getElementById("text-element");
-//Wasn't sure how to use the pseudo ::before element here. Fix later. 
-textElement.insertAdjacentText('beforebegin', 'Daniel Lee@mangoclient [~] $: ');
+let textElement = document.getElementById("text-element").insertAdjacentText('beforebegin', 'Daniel Lee@mangoclient [~] $: ');
 
+//Wasn't sure how to use the pseudo ::before element here. Fix later. 
+//textElement.insertAdjacentText('beforebegin', 'Daniel Lee@mangoclient [~] $: ');
+let testElement = document.getElementById("test")
 //Div for Result from command
 let textResult = document.getElementById("text-result");
 //let textHere = document.getElementById("text-here");
 
-//Start of Function to display input text into <p id="text-here">
-//use for loop or if else statement? 
-let inputElement = document.getElementById("input-element");
-let listElement = document.getElementById("myList");
+document.addEventListener("keyup");
+//Start of Function to display input text
+let inputElement = document.getElementById("input-element").value="";
+if (e.key === 'Enter') {
+    textResult.innerHTML = testElement.value
+};
+
+
+
+
+
+
+
+
+
+
+
+
 
 textElement.value = "";
-commander.innerHTML = textElement.value;
+inputElementer.innerHTML = textElement.value;
 
-function commander(cmd) {
+function inputElementer(cmd) {
     switch (cmd.toLowerCase()) {
         case "help":
             for (let i = 0; i < help.length; i++) {

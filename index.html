@@ -6,10 +6,10 @@
 </head>
 <body>
     <div id="text-element">
-        <input id="input-element" type="text" placeholder="Type 'help' for list of commands">
-        <ul id="myList"></ul>
+        <input id="input-element" type="text" placeholder="Type 'help' for list of commands" onkeyup="typeIt(this, event)" onkeydown="typeIt(this, event); moveIt(this.value.length, event)" onkeypress="typeIt(this, event);"autofocus >
     </div>
     <div id="text-result">
+        <span id="test"></span>
     </div>
     <script src="index.js"></script>
 </html>
