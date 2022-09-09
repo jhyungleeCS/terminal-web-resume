@@ -1,19 +1,33 @@
-//Load Other JS files into the main.js
-function loadScript(src) {
-    const script = document.createElement("script");
-    script.src =src;
-    document.head.prepend(script);
-}
-loadScript('tcommands.js');
-
 //Enter Command 
-let commandInput = document.getElementById("command-input")
-.insertAdjacentText('beforebegin', 'Daniel Lee@mangoclient [~] $: ');
+let commandInput = document.getElementById("command-input");
+
+let div1 = document.getElementById("div").insertAdjacentText('beforebegin', 'Daniel Lee@mangoclient [~] $: ');
 
 //Command Result
 let commandResult = document.getElementById("command-result")
 
 function helpCommand() {
-    commandResult.textContent = "h3lp"
+    for (let i = 0; i < help.length; i++) {
+        commandResult.innerHTML = 
+        "<li>" + help[0] + "</li>" + 
+        "<li>" + help[1] + "</li>" + 
+        "<li>" + help[2] + "</li>" + 
+        "<li>" + help[3] + "</li>" +
+        "<li>" + help[4] + "</li>"  
+    }
 }
 
+
+//
+const keyBoard = document.querySelector('.keyboard')
+keyBoard.addEventListener('keydown', e => {
+    if (e.keyCode === 13) {
+        //function()
+        console.log(e)
+    }
+})
+
+//function for input
+if (commandInput === 'help') {
+    helpCommand;
+}

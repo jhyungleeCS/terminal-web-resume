@@ -6,11 +6,19 @@ html{
 
 #command-input{
     display: inline;
-}
-
-input{
     padding: 5px;
     /* the width, see if it is different percent if the window is lower */
     width: 50%;
     box-sizing: border-box;
+}
+
+#div{
+    display: inline;
+}
+
+#command-result{
+    padding: 0px;
+    list-style-type: none;
+    margin: 0;
+    color: darkmagenta;
 }

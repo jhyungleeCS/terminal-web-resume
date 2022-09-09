@@ -1,21 +1,21 @@
 //help array
-let help = [
-    'whoami             Who is mangoclient?',
-    'projects           View projects',
-    'contacts           View contact information',
-    'resume             Link to LaTeX resume',
-    'help               View list of possible commands'
+var help = [
+    'whoami     &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp    Who is mangoclient?',
+    `projects   &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp    View projects`,
+    `resume     &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp    View LaTeX resume`,
+    `contact    &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp    View contact information/socials`,
+    `help       &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp    View available commands`
 ]
 
 //whoami array
-let whoami = [
+var whoami = [
     `Hello! My name is Daniel Lee. I am currently a senior at Drexel University expected to graduate
     on June 2023! I am currently studying for the Security+ and hope to grab a career as a malware
     analyst or reverse engineering role! More to come in this paragraph. 
     `
 ]
 //projects array
-let projects = [
+var projects = [
     `These are some of my projects that I have created so far. 
     Password Generator with encoding and encrypting feature written in Python. 
     Google Chrome Extension featuring malware detection tool.
@@ -24,7 +24,7 @@ let projects = [
     `
 ]
 //contacts array
-let contacts = [
+var contacts = [
     `I can be reached through the following email/socials: 
      <br>
      Email: jhyunglee.cs@gmail.com
@@ -34,7 +34,7 @@ let contacts = [
     `
 ]
 //resume array
-let resume = [
+var resume = [
     `My resume can be found through this link here! 
 
     `
