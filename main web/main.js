@@ -18,7 +18,7 @@ function helpCommand() {
 }
 
 
-//
+//reading Enter Key
 const keyBoard = document.querySelector('.keyboard')
 keyBoard.addEventListener('keydown', e => {
     if (e.keyCode === 13) {
